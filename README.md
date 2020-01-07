@@ -1,1 +1,2 @@
 # ParallelComputing-Bitonic-Sort-Synchronized
+This project approaches the parallelization of the bitonic sort differently. Each thread will be responsible for a subset of the array. Using network diagram as an analogy, each thread will be responsible for certain "wires" and will perform all the comparators that initiate on its wires (the arrows on the diagram). Synchronization will be done when threads need to compare/swap with other threads' wires. Synchronization will be done by using the Java class, CyclicBarrier, to coordinate the threads.
